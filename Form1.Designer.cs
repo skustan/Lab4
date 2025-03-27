@@ -30,6 +30,10 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonLoad = new System.Windows.Forms.Button();
+            this.radioButton90 = new System.Windows.Forms.RadioButton();
+            this.radioButton180 = new System.Windows.Forms.RadioButton();
+            this.radioButton270 = new System.Windows.Forms.RadioButton();
+            this.buttonRotate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,17 +55,65 @@
             this.buttonLoad.UseVisualStyleBackColor = true;
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
+            // radioButton90
+            // 
+            this.radioButton90.AutoSize = true;
+            this.radioButton90.Location = new System.Drawing.Point(12, 28);
+            this.radioButton90.Name = "radioButton90";
+            this.radioButton90.Size = new System.Drawing.Size(57, 24);
+            this.radioButton90.TabIndex = 2;
+            this.radioButton90.TabStop = true;
+            this.radioButton90.Text = "90°";
+            this.radioButton90.UseVisualStyleBackColor = true;
+            // 
+            // radioButton180
+            // 
+            this.radioButton180.AutoSize = true;
+            this.radioButton180.Location = new System.Drawing.Point(12, 58);
+            this.radioButton180.Name = "radioButton180";
+            this.radioButton180.Size = new System.Drawing.Size(66, 24);
+            this.radioButton180.TabIndex = 3;
+            this.radioButton180.TabStop = true;
+            this.radioButton180.Text = "180°";
+            this.radioButton180.UseVisualStyleBackColor = true;
+            // 
+            // radioButton270
+            // 
+            this.radioButton270.AutoSize = true;
+            this.radioButton270.Location = new System.Drawing.Point(12, 88);
+            this.radioButton270.Name = "radioButton270";
+            this.radioButton270.Size = new System.Drawing.Size(66, 24);
+            this.radioButton270.TabIndex = 4;
+            this.radioButton270.TabStop = true;
+            this.radioButton270.Text = "270°";
+            this.radioButton270.UseVisualStyleBackColor = true;
+            // 
+            // buttonRotate
+            // 
+            this.buttonRotate.Location = new System.Drawing.Point(45, 137);
+            this.buttonRotate.Name = "buttonRotate";
+            this.buttonRotate.Size = new System.Drawing.Size(134, 40);
+            this.buttonRotate.TabIndex = 5;
+            this.buttonRotate.Text = "Rotate";
+            this.buttonRotate.UseVisualStyleBackColor = true;
+            this.buttonRotate.Click += new System.EventHandler(this.buttonRotate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonRotate);
+            this.Controls.Add(this.radioButton270);
+            this.Controls.Add(this.radioButton180);
+            this.Controls.Add(this.radioButton90);
             this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Lab 4";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,6 +121,10 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonLoad;
+        private System.Windows.Forms.RadioButton radioButton90;
+        private System.Windows.Forms.RadioButton radioButton180;
+        private System.Windows.Forms.RadioButton radioButton270;
+        private System.Windows.Forms.Button buttonRotate;
     }
 }
 
