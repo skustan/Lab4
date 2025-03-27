@@ -30,6 +30,7 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonLoad = new System.Windows.Forms.Button();
+            this.buttonGreen = new System.Windows.Forms.Button();
             this.radioButton90 = new System.Windows.Forms.RadioButton();
             this.radioButton180 = new System.Windows.Forms.RadioButton();
             this.radioButton270 = new System.Windows.Forms.RadioButton();
@@ -57,6 +58,15 @@
             this.buttonLoad.UseVisualStyleBackColor = true;
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
+            // buttonGreen
+            // 
+            this.buttonGreen.Location = new System.Drawing.Point(45, 279);
+            this.buttonGreen.Name = "buttonGreen";
+            this.buttonGreen.Size = new System.Drawing.Size(134, 40);
+            this.buttonGreen.TabIndex = 2;
+            this.buttonGreen.Text = "GreenOnly";
+            this.buttonGreen.UseVisualStyleBackColor = true;
+            this.buttonGreen.Click += new System.EventHandler(this.buttonGreen_Click);
             // radioButton90
             // 
             this.radioButton90.AutoSize = true;
@@ -119,18 +129,22 @@
             this.button1.Text = "Upside Down";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+
+            this.Controls.Add(this.buttonGreen);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonInvert);
             this.Controls.Add(this.buttonRotate);
             this.Controls.Add(this.radioButton270);
             this.Controls.Add(this.radioButton180);
             this.Controls.Add(this.radioButton90);
+
             this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
@@ -145,6 +159,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonLoad;
+        private System.Windows.Forms.Button buttonGreen;
         private System.Windows.Forms.RadioButton radioButton90;
         private System.Windows.Forms.RadioButton radioButton180;
         private System.Windows.Forms.RadioButton radioButton270;
