@@ -34,6 +34,8 @@
             this.radioButton180 = new System.Windows.Forms.RadioButton();
             this.radioButton270 = new System.Windows.Forms.RadioButton();
             this.buttonRotate = new System.Windows.Forms.Button();
+            this.buttonInvert = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,11 +100,33 @@
             this.buttonRotate.UseVisualStyleBackColor = true;
             this.buttonRotate.Click += new System.EventHandler(this.buttonRotate_Click);
             // 
+            // buttonInvert
+            // 
+            this.buttonInvert.Location = new System.Drawing.Point(45, 183);
+            this.buttonInvert.Name = "buttonInvert";
+            this.buttonInvert.Size = new System.Drawing.Size(134, 40);
+            this.buttonInvert.TabIndex = 6;
+            this.buttonInvert.Text = "Invert Colors";
+            this.buttonInvert.UseVisualStyleBackColor = true;
+            this.buttonInvert.Click += new System.EventHandler(this.buttonInvert_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(45, 229);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 40);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Upside Down";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonInvert);
             this.Controls.Add(this.buttonRotate);
             this.Controls.Add(this.radioButton270);
             this.Controls.Add(this.radioButton180);
@@ -125,6 +149,8 @@
         private System.Windows.Forms.RadioButton radioButton180;
         private System.Windows.Forms.RadioButton radioButton270;
         private System.Windows.Forms.Button buttonRotate;
+        private System.Windows.Forms.Button buttonInvert;
+        private System.Windows.Forms.Button button1;
     }
 }
 

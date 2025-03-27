@@ -56,5 +56,35 @@ namespace Lab4
             }
             catch { }
         }
+
+        private void buttonInvert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Bitmap invertedPic = new Bitmap(pictureBox1.Image);
+                for (int y = 0; y <= invertedPic.Height - 1; y++) {
+                    for (int x = 0; x <= invertedPic.Width - 1; x++) {
+                        Color inv = invertedPic.GetPixel(x, y);
+                        if(inv != null)
+                        {
+                            inv = Color.FromArgb(255, 255 - inv.R, 255 - inv.G, 255 - inv.B);
+                            invertedPic.SetPixel(x, y, inv);
+                        }
+                    }
+                }
+                pictureBox1.Image = invertedPic;
+                pictureBox1.Refresh();
+            }
+            catch { }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try {
+                pictureBox1.Image.RotateFlip(RotateFlipType.RotateNoneFlipY);
+                pictureBox1.Refresh();
+            }
+            catch { }
+        }
     }
 }
